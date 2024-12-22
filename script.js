@@ -336,6 +336,11 @@ function easterEggGame(pick){
     text.innerText += "You lose, i'll take your 20 health";
     health -= 20;
     healthText.innerText = health;
+    if(health <= 0){
+    health = 0;
+    healthText.innerText = health;
+    lose();
+  }
   }
 }
 
